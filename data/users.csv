@@ -1,11 +1,3 @@
-initial,username,password
-gwt-ptu1,Product Training User 1,0N939M1QB6+mhmDnTw7/AN13fHQtAQ0IF4iHKV+X/4Q=
-Com_800003,Nay Min Tun,Mi6CYVDOm8duPxSZmfKAoiDaIvaEMpthLPbnJZay6OQ=
-com-130011,Mobile Test,vmJzdZ6SvGA3xmXrk9tsrBGdIEzMXw9NUMoi0XpGe94=
-com-600002,User602 Staff,ZrhqaMTU38RNCltENUpmdT0dgaF9qxEHIU+kgI6OMlg=
-Com-500007,Thet Chel,teCKkzG840g6QyPaRMVb0kSymG57Um8ynjMUFCUz7IY=
-com-900005,Lin Lin,U732A0SNuFLKwPZzVctdFc2nnM6S2p+PWHl4ETSjGxY=
-Com-700004,Com-7_Staff,t5251W17J53MIhlfxFk7Ds5yC+XlQKFNfNoGdC2nD+I=
-Com_800007,Com_800007,PDXQiLg4vFtdts+h1KD5Qa9/10AUI2vFkq1aSpTILHY=
-Com_800008,Com_800008,NYbtIMsiphRtRZcHoHDO1p465LDYzsi126xjOegWH8U=
-Com_800006,NayApprover_2,PxVZRVC8i8U09rbXrkk0ntCQYyXxzqbdAsrkLXE6KIw=
+initial,username,password,DeviceID
+gwt-ptu1,Product Training User 1,0N939M1QB6+mhmDnTw7/AN13fHQtAQ0IF4iHKV+X/4Q=,11111
+Com_800005,naymintun(level-3),sFPzDMYICMOesUfC0pKr8yZhg+zYprh1Zh5S1B0aBOs=,3

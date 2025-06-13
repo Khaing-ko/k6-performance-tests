@@ -1,0 +1,22 @@
+{
+    "Type": true,
+    "FormName": null,
+    "View_Type": "0",
+    "Include_Resign": false,
+    "Include_Active": true,
+    "Include_Inactive": false,
+    "Resign_MonthOnly": false,
+    "OrderbyDept": true,
+    "OrderByDesign": false,
+    "Dval": "",
+    "Resign_CustomPeriod": false,
+    "Resign_DateRange": false,
+    "Fromdate": null,
+    "Todate": null,
+    "StartDate": null,
+    "EndDate": null,
+    "Exclude_Resign_DateRange": false,
+    "excludeStartDate": null,
+    "excludeEndDate": null,
+    "OrgSortbyOption": null
+}
