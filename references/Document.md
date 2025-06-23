@@ -19,10 +19,10 @@ e.g 		$env:K6_WEB_DASHBOARD = "true"
 မှတ်ချက်။	။ Project ထဲမှာပါတဲ့ bat File နဲ့ တစ်ခါတည်း Run လို့ရပါတယ်.
 
 #Folder Structure
-![alt text](image.png)
+![alt text](/images/image.png)
 
 #Script Flow Information Explanation
-![alt text](image-1.png)
+![alt text](/images/image-1.png)
 
 1.ပထမ Stage စက္ကန့် (30) အတွင်း user တွေကို 10 ယောက် ပြည့်အောင်အထိ တစ်ဖြည့်ဖြည်း တက်လာပါမယ်. User (10) ယောက် က တစ်ပြိုင်တည်း ချက်ချင်း 0 စက္ကန့် စခေါ်တာ မဟုတ်ပါ.
 
@@ -30,7 +30,7 @@ e.g 		$env:K6_WEB_DASHBOARD = "true"
 
 3.တတိယ Stage နောက်ဆုံး စက္ကန့် (30) မှာ အဲ 10 ယောက် တစ်ဖြည်းဖြည်း 0 ဖြစ်သည်အထိ ပြန်လျော့လာပါမယ်. အဲတော့ စုစုပေါင်းအလုပ်လုပ်ရန် ကြာချိန် 2 မိနစ်ဖြစ်ပါမယ်.
 
-![alt text](image-2.png)
+![alt text](/images/image-2.png)
 
 1.ဒါကတော့ Report အတွက် Standard Rate ကို ပြောချင်တာပါ Respond အားလုံး ရဲ့ 95 ရာခိုင်းနှုန်းက  500 ms အတွင်း ပြန်ပေးနိုင်ရင် ကောင်းတယ်လို့ ယူဆပါမယ်. 
 
@@ -38,14 +38,14 @@ e.g 		$env:K6_WEB_DASHBOARD = "true"
 
 #Note. International Standart Rate က 500 ms ပါ.
 
-![alt text](image-3.png)
+![alt text](/images/image-3.png)
 
 1.User 1 ယောက်က EndPoint တစ်ခု ခေါ်ပြီးသွားရင် ခဏ တန့်ထားချင်တဲ့ အခါသုံးလို့ရပါတယ်.
 e.g - 	Math.random() 0s -> 1s,
 	sleep(1);
 
 #Test Report Information Explanation    
-![alt text](image-4.png)
+![alt text](/images/image-4.png)
 
 http_req_duration 	->	Request တစ်ခုလွှတ်ပြီး response ပြန်ရလာတဲ့အထိ ကြာချိန်။
                         (connect time+send time +waiting time + receive time)

@@ -1,14 +1,14 @@
 import http from 'k6/http';
-import { Configuration } from '.././enviroment/Configuration.js';
+import { Configuration } from '.././enviroment/configuration.js';
 import { check } from 'k6';
 import { sleep } from 'k6';
-import { baseUrl } from '.././enviroment/Header.js';
-import { getTokenResponse } from './Token.js';
-import { getCommonHeaders } from '.././enviroment/Header.js';
+import { baseUrl } from '.././enviroment/header.js';
+import { getTokenResponse } from './token.js';
+import { getCommonHeaders } from '.././enviroment/header.js';
 
 export const options = Configuration;
-const GetEmployeeTreeViewSetupByViewMenuPayload = JSON.parse(open('../payloads/GetEmployeeTreeViewSetupByViewMenuPayload.json'));
-const FilterAndTreeViewPayload = JSON.parse(open('../payloads/FilterAndTreeViewPayload.json'));
+const GetEmployeeTreeViewSetupByViewMenuPayload = JSON.parse(open('../payloads/getEmployeeTreeViewSetupByViewMenuPayload.json'));
+const FilterAndTreeViewPayload = JSON.parse(open('../payloads/filterAndTreeViewPayload.json'));
 export default function () {
   const bearerToken = getTokenResponse();  
   const FirstUrl = `${baseUrl}/employeesetupweb/GetAllEmployeeForFilter`;
