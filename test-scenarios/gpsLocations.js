@@ -1,11 +1,11 @@
 import http from 'k6/http';
-import { Configuration } from '.././enviroment/Configuration.js';
-import { getTokenResponse } from './Token.js';
-import { getCommonHeaders } from '.././enviroment/Header.js';
+import { Configuration } from '.././enviroment/configurations.js';
+import { getTokenResponse } from './getToken.js';
+import { getCommonHeaders } from '.././enviroment/headers.js';
 import { sleep } from 'k6';
 
 export const options = Configuration;
-
+const GPSLocationPayload = JSON.parse(open('../payloads/gpsLocationPayload.json'));
 export default function () {
 
   const bearerToken = getTokenResponse();  
@@ -15,7 +15,6 @@ export default function () {
   let headers = {
     headers: getCommonHeaders(bearerToken)
   };
-  const GPSLocationPayload = JSON.parse(open('./enviroment/GPSLocationPayload.json'));
   const resp = http.post(SecondUrl, GPSLocationPayload, headers);
   sleep(Math.random() * 2 + 1);
 }
