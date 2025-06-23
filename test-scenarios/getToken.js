@@ -1,7 +1,7 @@
 import http from 'k6/http';
 import { check } from 'k6';
 import { SharedArray } from 'k6/data';
-import { baseUrl, myOrigin } from '.././enviroment/header.js';
+import { baseUrl, myOrigin } from '.././enviroment/headers.js';
 import papaparse from 'https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js';
 
 const users = new SharedArray('users', function () {

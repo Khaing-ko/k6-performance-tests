@@ -1,7 +1,7 @@
 import http from 'k6/http';
 import { Configuration } from '.././enviroment/configurations.js';
 import { getTokenResponse } from './getToken.js';
-import { getCommonHeaders } from '.././enviroment/header.js';
+import { getCommonHeaders } from '.././enviroment/headers.js';
 import { sleep } from 'k6';
 
 export const options = Configuration;
