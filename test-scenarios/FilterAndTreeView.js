@@ -7,12 +7,10 @@ import { getTokenResponse } from './Token.js';
 import { getCommonHeaders } from '.././enviroment/Header.js';
 
 export const options = Configuration;
-
+const GetEmployeeTreeViewSetupByViewMenuPayload = JSON.parse(open('../payloads/GetEmployeeTreeViewSetupByViewMenuPayload.json'));
+const FilterAndTreeViewPayload = JSON.parse(open('../payloads/FilterAndTreeViewPayload.json'));
 export default function () {
-  const bearerToken = getTokenResponse();
-  const FilterAndTreeViewPayload = JSON.parse(open('./enviroment/FilterAndTreeViewPayload.json'));
-  const GetEmployeeTreeViewSetupByViewMenuPayload = JSON.parse(open('./enviroment/GetEmployeeTreeViewSetupByViewMenuPayload.json'));
-  
+  const bearerToken = getTokenResponse();  
   const FirstUrl = `${baseUrl}/employeesetupweb/GetAllEmployeeForFilter`;
   let headers = {
     headers: getCommonHeaders(bearerToken)

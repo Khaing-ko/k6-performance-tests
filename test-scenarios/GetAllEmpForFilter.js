@@ -7,7 +7,7 @@ import { getTokenResponse } from './Token.js';
 import { getCommonHeaders } from '.././enviroment/Header.js';
 
 export const options = Configuration;
-
+const FilterAndTreeViewPayload = JSON.parse(open('../payloads/FilterAndTreeViewPayload.json'));
 export default function () {
   
   const bearerToken = getTokenResponse();
@@ -15,7 +15,6 @@ let headers = {
     headers: getCommonHeaders(bearerToken)
   };
 
-    const FilterAndTreeViewPayload = JSON.parse(open('./enviroment/FilterAndTreeViewPayload.json'));
     const FirstUrl = `${baseUrl}/employeesetupweb/GetAllEmployeeForFilter`;
     const res=http.post(FirstUrl, FilterAndTreeViewPayload, headers);
     check(res, {
